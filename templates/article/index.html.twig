@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Les Articles!
+{% endblock %}
+
+{% block body %}
+	{% set i = 0 %}
+
+	<div class="container">
+		<div class="row">
+			{% for unArticle in lesArticles %}
+				{% if i > 2 %}
+				</div>
+				<div class="row">
+					{% set i = 1 %}
+				{% else %}
+					{% set i = i + 1 %}
+				{% endif %}
+
+				<div class="col card  p-2 m-2">
+					<a href="{{path('vue_article',{'id':unArticle.id})}}">
+						<img class="card-img-top" src="{{unArticle.lienImage}}" alt="">
+						<div class="card-body">
+							<h4 class="card-title text-center">{{unArticle.titre}}</h4>
+							<p class="card-text text-center">{{unArticle.previewContenu}}</p>
+						</div>
+					</div>
+				{% endfor %}
+			</div>
+		{% endblock %}

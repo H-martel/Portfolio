@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil
+
+{% endblock %}
+{% block navbar %}{% endblock %}
+{% block body %}
+	<a href="{{path('articles')}}">
+		<img class="logo-accueil" src="{{asset('logo/logo-hmartel/logo_web_full.png')}} " alt=" first slide">
+	</a>
+{% endblock %}

@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap');
+* {
+    font-family: 'Fira Code', monospace;
+}
+
+.logo {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('../logo/logo-portfolio/twitter_header_photo_1.png');
+}
+
+.bg-bleu {
+    background-color: #34495E;
+}
+
+.bg-orange {
+    background-color: #EABF12;
+}
+
+.txt-bleu {
+    color: #34495E
+}
+
+.txt-orange {
+    color: #EABF12
+}
+
+.img-carousel {
+    width: auto;
+    height: 100vh;
+}
+
+.logo-accueil {
+    width: 100vw;
+    height: 100vh;
+}
+
+.corps-article {
+    height: 100vh;
+}
+
+.titre-article {
+    text-shadow: #34495E 2px 2px;
+}
+
+.contenu-article {
+    background-color: #34495ee0;
+    border: solid #EABF12 2px;
+    border-radius: 20px;
+}
+
+.frame-pdf {
+    height: 100vh;
+    border: 0;
+    border-radius: 20px;
+}
+
+.fond-lorem {
+    background-image: url('https://picsum.photos/1366/1400');
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+	<div class="container-fluid fond-lorem">
+		<div class="container txt-orange h-100 corps-article ">
+			<div class="title text-center ">
+				<h1 class="p-4">{{article.titre}}</h1>
+				<div class=" p-4  m-3 contenu-article">
+					<p class="m-4">{{article.contenu}}</p>
+				</div>
+				<iframe class="w-100 frame-pdf" src="{{asset('pdf/'~ article.nomPdf ~'.pdf')}}"></iframe>
+			</div>
+		</div>
+	</div>
+{% endblock %}

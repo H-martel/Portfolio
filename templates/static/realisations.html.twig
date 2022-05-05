@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+	<div class="container">
+		<h1 class="text-center txt-orange m-3">
+			Tableau de synthèse des Réalisations :
+		</h1>
+		<div class="container">
+			<iframe class="w-100 frame-pdf" src="{{asset('pdf/tableauSynthese.pdf')}}"></iframe>
+		</div>
+	</div>
+{% endblock %}
