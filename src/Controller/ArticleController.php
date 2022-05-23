@@ -9,12 +9,11 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class ArticleController extends AbstractController
 {
-    #[Route('/articles', name: 'articles')]
+    #[Route('/articlez', name: 'articles')]
     public function listeArticles(ArticleRepository $articleRepository): Response
     {
         $lesArticles = $articleRepository->getArticles();
         return $this->render('article/index.html.twig', [
-            'controller_name' => 'ArticleController',
             'lesArticles' => $lesArticles
         ]);
     }
@@ -27,4 +26,8 @@ class ArticleController extends AbstractController
             'article' => $article,
         ]);
     }
+    #[Route('/article/ajouter', name: 'ajouter_articles')]
+    public function ajoutArticle(ArticleRepository $articleRepository): Response
+    {return $this->render('article/ajouter_article.html.twig');}
 }
+
