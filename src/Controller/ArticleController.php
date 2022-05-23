@@ -26,7 +26,7 @@ class ArticleController extends AbstractController
             'article' => $article,
         ]);
     }
-    #[Route('/article/ajouter', name: 'ajouter_articles')]
+    #[Route('/article/ajouter', name: 'ajouter_article')]
     public function ajoutArticle(ArticleRepository $articleRepository): Response
     {return $this->render('article/ajouter_article.html.twig');}
 }
