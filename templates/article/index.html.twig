@@ -8,6 +8,14 @@
 
 	<div class="container">
 		<div class="row">
+		<div class="col card  p-2 m-2">
+					<a href="{{path('ajouter_article')}}">
+						<img class="card-img-top" src="{{asset('public/logo/logo_plus.jpg')}}" alt="">
+						<div class="card-body">
+							<h4 class="card-title text-center">Ajouter un article</h4>
+							<p class="card-text text-center">Cliquez ici pour ajouter un article</p>
+						</div>
+					</div>
 			{% for unArticle in lesArticles %}
 				{% if i > 2 %}
 				</div>
