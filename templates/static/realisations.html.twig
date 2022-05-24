@@ -3,6 +3,7 @@
 Tableau de synthèse
 {% endblock %}
 {% block body %}
+<div class="container">
 	<div class="container">
 		<h1 class="text-center txt-orange m-3">
 			Tableau de synthèse des Réalisations :
@@ -11,4 +12,11 @@ Tableau de synthèse
 			<iframe class="w-100 frame-pdf" src="{{asset('pdf/tableauSynthese.pdf')}}"></iframe>
 		</div>
 	</div>
+	<div class="container">
+		<h1><a href="{{asset("zip/ludo.rar")}}" download="ludo.rar"> ludo </a>
+	</div>
+	<div class="container">
+		<h1><a href="{{asset("zip/portfolio.rar")}}" download="portfolio.rar"> portfolio </a>
+	</div>
+</div>
 {% endblock %}
