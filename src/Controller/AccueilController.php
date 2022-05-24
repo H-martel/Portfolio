@@ -21,4 +21,15 @@ class AccueilController extends AbstractController
     {
         return $this->render('static/realisations.html.twig');
     }
+
+    #[Route('/cv', name: 'cv')]
+    public function afficherCv(): Response
+    {
+        return $this->render('static/cv.html.twig');
+    }
+    #[Route('/veille', name: 'veille')]
+    public function afficherVeille(): Response
+    {
+        return $this->render('static/veille.html.twig');
+    }
 }

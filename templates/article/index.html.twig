@@ -6,10 +6,10 @@
 {% block body %}
 	{% set i = 1 %}
 
-	<div class="container">
+	<div class="container ">
 		<div class="row">
-		<div class="col card  p-2 m-2">
-					<a href="{{path('ajouter_article')}}">
+			<div class="col-lg-3 col-md-2 col-sm-1 card p-2 m-2">
+					<a href="{{path('nouveau')}}">
 						<img class="card-img-top" src="{{asset('logo/logo_plus.jpg')}}" alt="">
 						<div class="card-body">
 							<h4 class="card-title text-center">Ajouter un article</h4>
@@ -25,7 +25,7 @@
 					{% set i = i + 1 %}
 				{% endif %}
 
-				<div class="col card  p-2 m-2">
+				<div class="card col-lg-3 col-md-2 col-sm-1 p-2 m-2">
 					<a href="{{path('vue_article',{'id':unArticle.id})}}">
 						<img class="card-img-top" src="{{unArticle.lienImage}}" alt="">
 						<div class="card-body">
