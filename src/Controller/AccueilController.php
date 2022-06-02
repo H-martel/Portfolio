@@ -13,6 +13,7 @@ class AccueilController extends AbstractController
     {
         return $this->render('static/serveur.html.twig');
     }
+    
 
     #[Route('/realisations', name: 'realisations')]
     public function afficherRealisations(): Response
